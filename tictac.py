@@ -1,15 +1,13 @@
-from typing import Counter
-
-
 game = [[0, 0, 0],
         [0, 0, 0], 
         [0, 0, 0]]
 
-def board():
+def game_board(player, row, column):
     print("   a  b  c")
     for count, row in enumerate(game):
         print(count, row)
 
-game[0][1] = 1
-board()
+game_board(0, 0, 0)
+#game[0][1] = 1
+#game_board()
 
